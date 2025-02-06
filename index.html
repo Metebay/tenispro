@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş 2D Tenis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>PING PONG PRO</h1>
+        <button id="singlePlayer">Tek Oyuncu</button>
+        <button id="multiPlayer">İki Oyuncu</button>
+        <div class="difficulty">
+            <label>Zorluk: </label>
+            <select id="difficulty">
+                <option value="easy">Kolay</option>
+                <option value="medium">Orta</option>
+                <option value="hard">Zor</option>
+            </select>
+        </div>
+    </div>
+    <div class="game-overlay">
+        <div class="scoreboard">
+            <span id="score1">0</span> - <span id="score2">0</span>
+        </div>
+        <div id="winnerMessage"></div>
+    </div>
+    <div class="game-container">
+        <div class="paddle" id="paddle1"></div>
+        <div class="paddle" id="paddle2"></div>
+        <div class="ball" id="ball"></div>
+        <div class="center-line"></div>
+    </div>
+    
+    <!-- Ses elementleri -->
+    <audio id="paddleSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+    <audio id="scoreSound" src="https://assets.mixkit.co/active_storage/sfx/2223/2223-preview.mp3"></audio>
+    <audio id="wallSound" src="https://assets.mixkit.co/active_storage/sfx/2572/2572-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
